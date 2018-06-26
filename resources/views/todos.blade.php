@@ -24,6 +24,11 @@
 
             padding-left: 10px;
         }
+
+        .todo {
+
+            padding: 10px 0;
+        }
     </style>
 
   </head>
@@ -42,7 +47,7 @@
                     </form>
 
                     <div v-if="hasTodos" class="todos">
-                        <div v-for="todo in todos">
+                        <div class="todo" v-for="todo in todos">
 
                             <div class="row">
 
